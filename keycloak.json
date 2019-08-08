@@ -1,0 +1,15 @@
+{
+    "realm": "master",
+    "auth-server-url": "http://192.168.1.207:8180/auth",
+    "ssl-required": "external",
+    "resource": "ZOHO_Service",
+    "verify-token-audience": true,
+    "credentials": {
+      "secret": "39e53116-4734-41d5-92e9-00a61d1b75b5"
+    },
+    "use-resource-role-mappings": true,
+    "confidential-port": 0
+}
+
+
+
