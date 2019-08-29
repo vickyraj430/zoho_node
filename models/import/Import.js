@@ -10,15 +10,6 @@ importmodel.insertContact = function (obj, session, req, res ) {
         rejectedRecords = [],
         onlyOne;
     // obj is the array of objects coming from the file that is being imported
-    obj.map((importedData) => {
-        for (i = (obj.length - 1); i >= 0; i--) {
-            if (obj[i].email_address == importedData.email_address) {
-                onlyOne = obj[i];
-                obj.splice(i, 1);
-            }
-        }
-        obj.push(onlyOne);
-    });
 
     obj.map((importedData) => {
         promises.push(contactmodel.insertContact(importedData, session, req, res));
